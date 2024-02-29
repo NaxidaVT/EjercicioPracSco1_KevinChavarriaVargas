@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libreria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .book-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .book-card h3 {
+            color: #333;
+        }
+
+        .book-card p {
+            color: #666;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="Libreria.html">Librería</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Libros.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="main text-center">
+    <h1 class="display-4">Bienvenido a la sesión de Libros</h1>
+    <p class="lead">¡Encuentra tu mejor libro!</p>
+</div>
+
+<div class="container">
+    <h2>Libros Disponibles</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="book-card">
+                <h3>El nombre del viento</h3>
+                <p>Precio: $25.99</p>
+                <p>Categoría: Fantasía</p>
+                <a href="#" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="book-card">
+                <h3>Cien años de soledad</h3>
+                <p>Precio: $19.99</p>
+                <p>Categoría: Realismo mágico</p>
+                <a href="#" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="book-card">
+                <h3>1984</h3>
+                <p>Precio: $15.50</p>
+                <p>Categoría: Ciencia ficción</p>
+                <a href="#" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+        <p>&copy; 2024 Librería Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

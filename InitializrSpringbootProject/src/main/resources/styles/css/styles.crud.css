@@ -1,0 +1,80 @@
+/* Estilos para el título */
+.title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Estilos para el formulario */
+.form {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilos para los elementos clickeables */
+input[type='submit'], button, [aria-label] {
+    cursor: pointer;
+}
+
+/* Estilos para el cuadro de edición */
+#edit-box {
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+    background-color: aliceblue;
+    padding-right: 10px;
+    text-align: left;
+}
+
+/* Estilos adicionales */
+.to-list {
+    background: transparent !important;
+}
+
+/* Estilos para el texto destacado */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Estilos para la barra de navegación cuando se expande en pantallas pequeñas */
+.navbar-expand-sm {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+/* Estilos para eliminar el relleno de un elemento */
+.p-0 {
+    padding: 0 !important;
+}
+
+/* Estilos para el fondo oscuro */
+.bg-dark {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+/* Estilos para el colapso de la barra de navegación */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Estilos para los elementos de la barra de navegación */
+.navbar-nav {
+    flex-direction: row;
+}
+
+/* Estilos para los elementos individuales de la barra de navegación */
+.nav-item {
+    margin-right: 10px;
+}
+
+/* Estilos para las columnas */
+.col {
+    flex: 1;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Librería Dolfito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .main {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .main h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .main p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            padding: 50px 0;
+        }
+
+        .book-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .book-card p {
+            font-size: 1.2rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background-color: #343a40;
+            border-color: #343a40;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffd700;
+            border-color: #ffd700;
+            color: #343a40;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Libros</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="main">
+    <h1>Aqui se encuentra la lista de todos tus libros</h1>
+    <p>Comprados / Favoritos</p>
+</div>
+
+<div class="container">
+    <h2>Libros Comprados</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="book-card">
+                <h3>Libro 1</h3>
+                <p>Categoría: Ficción</p>
+                <a href="#" class="btn btn-primary">Leer</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="book-card">
+                <h3>Libro 2</h3>
+                <p>Categoría: Ciencia</p>
+                <a href="#" class="btn btn-primary">Leer</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="book-card">
+                <h3>Libro 3</h3>
+                <p>Categoría: Historia</p>
+                <a href="#" class="btn btn-primary">Leer</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Ver mis libros favoritos</h2>
+    <a href="Favoritos.html" class="btn btn-primary">Ver Favoritos</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Librería Dolfito. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

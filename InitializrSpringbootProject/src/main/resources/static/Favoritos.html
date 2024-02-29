@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link href="../styles/css/estilos-personalizados.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #5e72e4 !important;
+        }
+        .card {
+            background-color: #f8f9fa;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 2rem;
+        }
+        .card-header {
+            border-radius: 10px 10px 0 0;
+        }
+        .btn-primary {
+            background-color: #5e72e4;
+            border-color: #5e72e4;
+            font-size: 1.2rem;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #6e83f6;
+            border-color: #6e83f6;
+        }
+        .footer {
+            background-color: #5e72e4;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Barra de navegación -->
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="libros.html">Libros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 2rem; font-weight: bold;">Biblioteca</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="static/inicio.html" style="font-size: 1.2rem;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="static/libros.html" style="font-size: 1.2rem;">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="static/contacto.html" style="font-size: 1.2rem;">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Agregar Libro Favorito
+                </div>
+                <div class="card-body">
+                    <form id="formulario-agregar-libro">
+                        <div class="form-group">
+                            <label for="titulo-libro">Título</label>
+                            <input type="text" class="form-control" id="titulo-libro" placeholder="Ingrese el título">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar Libro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Mis Libros Favoritos
+                </div>
+                <ul class="list-group list-group-flush" id="lista-libros">
+                    <!-- Aquí se agregarán dinámicamente los libros favoritos -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="mb-0" style="font-size: 1.2rem;">&copy; 2024 Biblioteca. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
